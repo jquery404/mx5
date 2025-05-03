@@ -18,7 +18,7 @@ class MyNotificationListener : NotificationListenerService() {
         val text = extras.getCharSequence("android.text")?.toString() ?: return
         if (packageName != "com.whatsapp.w4b") return
 
-        // Match phone number (e.g., +65 21 214 9817)
+        // Match phone number
 //        val isPhoneNumber = title.matches(Regex("""^\+?\d[\d\s-]{6,}$"""))
 //        val hasLetters = title.matches(Regex(".*[a-zA-Z].*"))
 //        val hasFBabu = title.startsWith("F Babu")
